@@ -7,9 +7,21 @@ channels:
 dependencies:
   {% if cookiecutter.project_packages == "All" -%}
   - fs
+  - pathlib
+  - black
+  - invoke
   - jupyter
   - jupyterlab
-  - pathlib
+  - matplotlib
+  - nbdime
+  - numpy
+  - pandas
+  - pip
+  - plotly
+  - pyjanitor
+  - pyprojroot
+  - python=3.10
+  - seaborn
   {% endif -%}
   - pip
   {% if cookiecutter.project_packages == "All" -%}
