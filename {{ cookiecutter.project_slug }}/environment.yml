@@ -1,5 +1,5 @@
 # conda env create --file environment.yml
-name: {{ cookiecutter.project_slug }}
+name: venv_{{ cookiecutter.project_slug }}
 channels:
   - anaconda
   - conda-forge
@@ -22,6 +22,8 @@ dependencies:
   - pyprojroot
   - python=3.10
   - seaborn
+  - scipy
+  - scikit-learn
   {% endif -%}
   - pip
   {% if cookiecutter.project_packages == "All" -%}
